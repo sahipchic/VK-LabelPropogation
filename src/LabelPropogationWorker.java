@@ -9,7 +9,7 @@ import java.util.concurrent.Callable;
 public class LabelPropogationWorker implements Callable<Boolean> {
     private Vector<Integer> domLabels;
     private Vector<Integer> labelCounts;
-    private int nodeId;
+    private int nodeId; 
     private Random randGenerator;
     private Vector<Node> nodesList;
     public LabelPropogationWorker(Vector<Node> nodesList){

@@ -103,9 +103,6 @@ public class LabelPropogation {
         OutputStreamWriter fileWriter = new OutputStreamWriter(out, Charset.forName("UTF-8"));
 
         for (Map.Entry<Integer, Set<Integer>> entry : communitues.entrySet()) {
-//            if(entry.getValue().size() == 1 && entry.getValue().contains(entry.getKey())){
-//                continue;
-//            }
             fileWriter.write("communityId" + communityId + " : " + entry.getValue() + "\n");
             System.out.println("communityId" + communityId + " : " + entry.getValue());
             communityId++;
