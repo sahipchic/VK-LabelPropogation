@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) throws IOException, InterruptedException, ExecutionException {
         LabelPropogation lp = new LabelPropogation();
 
-        int maxNumNodes = 4038;
+        int maxNumNodes = 4039;
         int numThreads = 5;
         lp.readGraph(maxNumNodes + 1, "input.edges");
         lp.searchForCommunities("interim_calculations_", numThreads);
